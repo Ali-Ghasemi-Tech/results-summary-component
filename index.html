@@ -13,10 +13,28 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="dist/output.css">
 </head>
-<body>
+<body class="flex justify-center items-center h-screen">
 
-  Your Result
+  <div class="flex flex-row h-[500px] w-[700px] rounded-3xl bg-white shadow-lg">
+    <div class="flex flex-col items-center w-[50%] bg-gradient-to-t from-indigo-600 from-60% to-violet-600 rounded-3xl">
+      <span class="text-xl text-gray-200 m-9">Your Result</span>
+
+      <div class="flex flex-col items-center justify-center w-[200px] h-[200px] bg-gradient-to-b from-[rgba(0,0,0,0.15)] from-10% rounded-full">
+        <span class="text-6xl text-white font-bold">76</span>
+        <span class="text-gray-300 text-sm mt-2">of 100</span>
+      </div>
+      <div class="flex flex-col items-center pt-4 w-[240px]">
+        <h4 class="text-gray-100 text-3xl font-bold">Great</h4>
+        <span class="text-gray-300 text-base text-center pt-4">You scored higher than 65% of the people who have taken these tests.</span>
+      </div>
+      
+    </div>
+    <div></div>
+  </div>
+
+  <!--Your Result
   76
   of 100
 
@@ -42,6 +60,6 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div>-->
 </body>
 </html>
