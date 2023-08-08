@@ -8,70 +8,78 @@
   
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
   <link rel="stylesheet" href="dist/output.css">
 </head>
 <body class="flex justify-center items-center h-screen">
-
-  <div class="flex flex-row h-[480px] w-[700px] rounded-3xl bg-white shadow-lg">
-    <div class="flex flex-col items-center w-1/2 bg-gradient-to-t from-indigo-600 from-60% to-violet-600 rounded-3xl">
-      <span class="text-xl text-gray-200 m-9">Your Result</span>
-
-      <div class="flex flex-col items-center justify-center w-[200px] h-[200px] bg-gradient-to-b from-[rgba(0,0,0,0.15)] from-10% rounded-full">
-        <span class="text-6xl text-white font-bold">76</span>
-        <span class="text-gray-300 text-sm mt-2">of 100</span>
+  <!-- card box -->
+  <div class="flex mobile:rounded-none mobile:flex-col mobile:w-screen mobile:shadow-none mobile:h-screen flex-row h-[480px] w-[700px] rounded-3xl bg-white shadow-lg">
+    <!-- left side -->
+    <div class="flex flex-col items-center justify-evenly w-[350px] bg-gradient-to-t from-indigo-600 from-60% to-violet-600 rounded-3xl mobile:h-full mobile:w-screen mobile:rounded-t">
+      <span class="text-xl text-gray-200 m-9 mobile:m-3">Your Result</span>
+      <!-- the circle -->
+      <div class="flex flex-col items-center justify-center w-[200px] h-[200px] bg-gradient-to-b from-[rgba(0,0,0,0.15)] from-10% rounded-full mobile:w-[120px] mobile:h-[120px]">
+        <span class="text-6xl text-white font-bold mobile:text-5xl">76</span>
+        <span class="text-gray-300 text-sm mt-2 mobile:mt-1">of 100</span>
       </div>
-      <div class="flex flex-col items-center pt-4 w-[240px]">
-        <h4 class="text-gray-100 text-3xl font-bold">Great</h4>
-        <span class="text-gray-300 text-base text-center pt-4">You scored higher than 65% of the people who have taken these tests.</span>
+      <div class="flex flex-col items-center pt-4 w-[240px] mobile:w-[300px]">
+        <h4 class="text-gray-100 text-3xl font-bold mobile:text-2xl">Great</h4>
+        <span class="text-gray-300 text-base text-center pt-4 mobile:p-2 mobile:pb-4">You scored higher than 65% of the people who have taken these tests.</span>
       </div>
       
     </div>
-    <div class="flex flex-col justify-center items-center w-1/2">
+    <!-- right side -->
+    <div class="flex flex-col justify-center items-center w-1/2 mobile:w-screen mobile:h-full mobile:pt-4">
+      <!-- summary txt -->
       <div class=" text-lg font-bold w-[300px]">Summary</div>
+      <!-- status box -->
       <div class="flex flex-col gap-5 mt-6">
+        <!-- reaction box -->
         <div class="flex flex-row justify-between p-3 bg-[rgba(233,128,114,0.08)] w-[300px] rounded-lg">
+          <!-- left side of reaction box -->
           <div class="flex flex-row gap-3">
             <img src="./assets/images/icon-reaction.svg" alt="" class="inline">
             <span class="text-[rgb(233,128,114)]">Reaction</span>
           </div>
+          <!-- right side of reaction box -->
           <div class="flex flex-row font-bold gap-1">
             <span>80 </span>
             <span class="opacity-40">/ 100</span>
           </div>
         </div>
-
+        <!-- memory box -->
         <div class="flex flex-row justify-between p-3 bg-[rgba(233,197,114,0.12)] w-[300px] rounded-lg">
+          <!-- left side of memory box -->
           <div class="flex flex-row gap-3">
             <img src="./assets/images/icon-memory.svg" alt="" class="inline">
             <span class="text-[rgb(233,199,114)]">Memory</span>
           </div>
+          <!-- right side of memory box -->
           <div class="flex flex-row font-bold gap-1">
             <span>92 </span>
             <span class="opacity-40">/ 100</span>
           </div>
         </div>
-
+        <!-- verbal box -->
         <div class="flex flex-row justify-between p-3 bg-[rgba(114,233,201,0.12)] w-[300px] rounded-lg">
+          <!-- left side of verbal box -->
           <div class="flex flex-row gap-3">
             <img src="./assets/images/icon-verbal.svg" alt="" class="inline">
             <span class="text-[rgb(100,235,199)]">Verbal</span>
           </div>
+          <!-- right side of verbal box -->
           <div class="flex flex-row font-bold gap-1">
             <span>69 </span>
             <span class="opacity-40">/ 100</span>
           </div>
         </div>
-
+        <!-- visual box -->
         <div class="flex flex-row justify-between p-3 bg-[rgba(122,114,233,0.12)] w-[300px] rounded-lg">
+          <!-- left side of visual box -->
           <div class="flex flex-row gap-3">
             <img src="./assets/images/icon-visual.svg" alt="" class="inline">
             <span class="text-[rgb(86,86,231)]">Visual</span>
           </div>
+          <!-- right side of visual box -->
           <div class="flex flex-row font-bold gap-1">
             <span>72 </span>
             <span class="opacity-40">/ 100</span>
@@ -79,6 +87,7 @@
         </div>
        
       </div>
+      <!-- continue button box -->
       <div>
         <button class="w-[300px] h-[50px] bg-gray-600 text-gray-200 rounded-3xl font-bold mt-[45px] hover:bg-gradient-to-t from-indigo-600 to-violet-600  text-xl">Continue</button>
       </div>
